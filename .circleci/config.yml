@@ -32,7 +32,7 @@ jobs:
             docker tag udagram-frontend baolq99/udagram-frontend:v3
 
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
-            docker tag udagram-reverseproxy baolq99/udagram-reverseproxy:v3
+            docker tag udagram-reverseproxy baolq99/reverseproxy:v3
 
             echo "-------- All images succesfully built----------"
 
@@ -45,7 +45,7 @@ jobs:
             docker push baolq99/udagram-api-feed:v3
             docker push baolq99/udagram-api-user:v3
             docker push baolq99/udagram-frontend:v3
-            docker push baolq99/udagram-reverseproxy:v3
+            docker push baolq99/reverseproxy:v3
 
 workflows:
   default:
